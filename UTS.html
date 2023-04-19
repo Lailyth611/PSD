@@ -158,6 +158,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Tugas 2 - Crawling Data PTA Trunojoyo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas3.html">Tugas 3 - Crawling Data Berita Online</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">UTS: Processing Data PTA</a></li>
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -351,58 +357,60 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-data">Pre Processing Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processing-data-null">Processing Data Null</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-null">Cek Data Null</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hapus-data-null">Hapus Data Null</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-not-null">Cek data not null</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-jumlah-class-data">Cek Jumlah Class Data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik-data-class">Grafik data Class</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">UTS: Processing Data PTA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-data">Pre Processing Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processing-data-null">Processing Data Null</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-null">Cek Data Null</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hapus-data-null">Hapus Data Null</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-not-null">Cek data not null</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-jumlah-class-data">Cek Jumlah Class Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik-data-class">Grafik data Class</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-text">Cleaning Text</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-cleaning">Export Data Cleaning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-text">Cleaning Text</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-cleaning">Export Data Cleaning</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-missing-value">Menghapus Missing Value</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-duplicate-value">Menghapus Duplicate Value</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-kolom-abstrak">Cek Data Kolom Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-missing-value">Menghapus Missing Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-duplicate-value">Menghapus Duplicate Value</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-kolom-abstrak">Cek Data Kolom Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi">Tokenisasi</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi-abstrak">Tokenisasi Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi">Tokenisasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi-abstrak">Tokenisasi Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-stop-word">Menghapus Stop Word</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-judul">Stop Word Judul</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-abstrak">Stop Word Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-stop-word">Menghapus Stop Word</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-judul">Stop Word Judul</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-abstrak">Stop Word Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">Stemming</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming-abstrak">Stemming Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">Stemming</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming-abstrak">Stemming Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-processing">Export data Processing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-processing">Load Data Processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-processing">Export data Processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-processing">Load Data Processing</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-data">Modeling Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-fitur">Ekstraksi Fitur</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-data">Modeling Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-fitur">Ekstraksi Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-data">Training Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-knn">Menggunakan KNN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#training-data">Training Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-knn">Menggunakan KNN</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Menggunakan KNN</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-naive-bayes">Menggunakan Naive Bayes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Menggunakan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-naive-bayes">Menggunakan Naive Bayes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-model">Export Model</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#export-model">Export Model</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -413,7 +421,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="uts-processing-data-pta">
+  <div class="section" id="uts-processing-data-pta">
 <h1>UTS: Processing Data PTA<a class="headerlink" href="#uts-processing-data-pta" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -423,8 +431,9 @@ document.write(`
 </div>
 </div>
 </div>
+</div>
 <div class="section" id="load-data">
-<h2>Load Data<a class="headerlink" href="#load-data" title="Permalink to this heading">#</a></h2>
+<h1>Load Data<a class="headerlink" href="#load-data" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/Lailyth611/PSD/main/DataOlah_Pta.csv&#39;</span><span class="p">)</span>
@@ -434,7 +443,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-02b12849-a904-4087-a702-ab4c4beede84">
+  <div id="df-6da6446c-c6a2-4491-9c07-62b87f20d826">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -523,7 +532,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-02b12849-a904-4087-a702-ab4c4beede84')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6da6446c-c6a2-4491-9c07-62b87f20d826')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -574,12 +583,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-02b12849-a904-4087-a702-ab4c4beede84 button.colab-df-convert');
+          document.querySelector('#df-6da6446c-c6a2-4491-9c07-62b87f20d826 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-02b12849-a904-4087-a702-ab4c4beede84');
+          const element = document.querySelector('#df-6da6446c-c6a2-4491-9c07-62b87f20d826');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -602,11 +611,11 @@ document.write(`
 </div>
 </div>
 <div class="section" id="pre-processing-data">
-<h2>Pre Processing Data<a class="headerlink" href="#pre-processing-data" title="Permalink to this heading">#</a></h2>
+<h1>Pre Processing Data<a class="headerlink" href="#pre-processing-data" title="Permalink to this heading">#</a></h1>
 <div class="section" id="processing-data-null">
-<h3>Processing Data Null<a class="headerlink" href="#processing-data-null" title="Permalink to this heading">#</a></h3>
+<h2>Processing Data Null<a class="headerlink" href="#processing-data-null" title="Permalink to this heading">#</a></h2>
 <div class="section" id="cek-data-null">
-<h4>Cek Data Null<a class="headerlink" href="#cek-data-null" title="Permalink to this heading">#</a></h4>
+<h3>Cek Data Null<a class="headerlink" href="#cek-data-null" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -630,7 +639,7 @@ dtype: int64
 <p>Terdapat 25 data kosong pada abstrak dan 43 data kosong pada Label</p>
 </div>
 <div class="section" id="hapus-data-null">
-<h4>Hapus Data Null<a class="headerlink" href="#hapus-data-null" title="Permalink to this heading">#</a></h4>
+<h3>Hapus Data Null<a class="headerlink" href="#hapus-data-null" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -661,7 +670,7 @@ dtype: int64
 <p>Menghapus data Kosong pada abstrak</p>
 </div>
 <div class="section" id="cek-data-not-null">
-<h4>Cek data not null<a class="headerlink" href="#cek-data-not-null" title="Permalink to this heading">#</a></h4>
+<h3>Cek data not null<a class="headerlink" href="#cek-data-not-null" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -685,7 +694,7 @@ dtype: int64
 <p>Data yang tidak kosong berjumlah 810</p>
 </div>
 <div class="section" id="cek-jumlah-class-data">
-<h4>Cek Jumlah Class Data<a class="headerlink" href="#cek-jumlah-class-data" title="Permalink to this heading">#</a></h4>
+<h3>Cek Jumlah Class Data<a class="headerlink" href="#cek-jumlah-class-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Label&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -703,7 +712,7 @@ Name: Label, dtype: int64
 </div>
 </div>
 <div class="section" id="grafik-data-class">
-<h4>Grafik data Class<a class="headerlink" href="#grafik-data-class" title="Permalink to this heading">#</a></h4>
+<h3>Grafik data Class<a class="headerlink" href="#grafik-data-class" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -720,7 +729,7 @@ Name: Label, dtype: int64
 </div>
 </div>
 <div class="section" id="cleaning-text">
-<h3>Cleaning Text<a class="headerlink" href="#cleaning-text" title="Permalink to this heading">#</a></h3>
+<h2>Cleaning Text<a class="headerlink" href="#cleaning-text" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">string</span>
@@ -766,7 +775,7 @@ Name: Label, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-54c6a232-d22d-42b9-b763-bfb4d22aa217">
+  <div id="df-0582479b-ff08-49fc-b2f9-574265c665f9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -855,7 +864,7 @@ Name: Label, dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-54c6a232-d22d-42b9-b763-bfb4d22aa217')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0582479b-ff08-49fc-b2f9-574265c665f9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -906,12 +915,12 @@ Name: Label, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-54c6a232-d22d-42b9-b763-bfb4d22aa217 button.colab-df-convert');
+          document.querySelector('#df-0582479b-ff08-49fc-b2f9-574265c665f9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-54c6a232-d22d-42b9-b763-bfb4d22aa217');
+          const element = document.querySelector('#df-0582479b-ff08-49fc-b2f9-574265c665f9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -933,7 +942,7 @@ Name: Label, dtype: int64
   </div></div>
 </div>
 <div class="section" id="export-data-cleaning">
-<h4>Export Data Cleaning<a class="headerlink" href="#export-data-cleaning" title="Permalink to this heading">#</a></h4>
+<h3>Export Data Cleaning<a class="headerlink" href="#export-data-cleaning" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Export Hasil Text Cleaning</span>
@@ -945,7 +954,7 @@ Name: Label, dtype: int64
 </div>
 </div>
 <div class="section" id="menghapus-missing-value">
-<h3>Menghapus Missing Value<a class="headerlink" href="#menghapus-missing-value" title="Permalink to this heading">#</a></h3>
+<h2>Menghapus Missing Value<a class="headerlink" href="#menghapus-missing-value" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ubah string kosong menjadi NaN value</span>
@@ -991,7 +1000,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="menghapus-duplicate-value">
-<h3>Menghapus Duplicate Value<a class="headerlink" href="#menghapus-duplicate-value" title="Permalink to this heading">#</a></h3>
+<h2>Menghapus Duplicate Value<a class="headerlink" href="#menghapus-duplicate-value" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1001,7 +1010,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4c762352-9428-436c-8dc1-b9c87382d166">
+  <div id="df-9ea97c07-851b-4af7-92a8-5e700bc094b3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1035,7 +1044,7 @@ dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4c762352-9428-436c-8dc1-b9c87382d166')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9ea97c07-851b-4af7-92a8-5e700bc094b3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1086,12 +1095,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4c762352-9428-436c-8dc1-b9c87382d166 button.colab-df-convert');
+          document.querySelector('#df-9ea97c07-851b-4af7-92a8-5e700bc094b3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4c762352-9428-436c-8dc1-b9c87382d166');
+          const element = document.querySelector('#df-9ea97c07-851b-4af7-92a8-5e700bc094b3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1113,7 +1122,7 @@ dtype: int64
   </div></div>
 </div>
 <div class="section" id="cek-data-kolom-abstrak">
-<h4>Cek Data Kolom Abstrak<a class="headerlink" href="#cek-data-kolom-abstrak" title="Permalink to this heading">#</a></h4>
+<h3>Cek Data Kolom Abstrak<a class="headerlink" href="#cek-data-kolom-abstrak" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove duplicates abstrak</span>
@@ -1126,7 +1135,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-62adc234-fc13-4960-a327-bfe613e9d90e">
+  <div id="df-ec72ad88-25d1-4906-bb4e-0a170d8c013f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1160,7 +1169,7 @@ dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-62adc234-fc13-4960-a327-bfe613e9d90e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ec72ad88-25d1-4906-bb4e-0a170d8c013f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1211,12 +1220,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-62adc234-fc13-4960-a327-bfe613e9d90e button.colab-df-convert');
+          document.querySelector('#df-ec72ad88-25d1-4906-bb4e-0a170d8c013f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-62adc234-fc13-4960-a327-bfe613e9d90e');
+          const element = document.querySelector('#df-ec72ad88-25d1-4906-bb4e-0a170d8c013f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1260,7 +1269,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="tokenisasi">
-<h3>Tokenisasi<a class="headerlink" href="#tokenisasi" title="Permalink to this heading">#</a></h3>
+<h2>Tokenisasi<a class="headerlink" href="#tokenisasi" title="Permalink to this heading">#</a></h2>
 <p>Memecah Kalimat Per kata</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1276,61 +1285,42 @@ dtype: int64
 [nltk_data]    | Downloading package cmudict to /root/nltk_data...
 [nltk_data]    |   Unzipping corpora/cmudict.zip.
 [nltk_data]    | Downloading package gazetteers to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/gazetteers.zip.
+[nltk_data]    |   Unzipping corpora/gazetteers.zip.
 [nltk_data]    | Downloading package genesis to /root/nltk_data...
 [nltk_data]    |   Unzipping corpora/genesis.zip.
 [nltk_data]    | Downloading package gutenberg to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/gutenberg.zip.
+[nltk_data]    |   Unzipping corpora/gutenberg.zip.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package inaugural to /root/nltk_data...
 [nltk_data]    |   Unzipping corpora/inaugural.zip.
 [nltk_data]    | Downloading package movie_reviews to
 [nltk_data]    |     /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/movie_reviews.zip.
+[nltk_data]    |   Unzipping corpora/movie_reviews.zip.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package names to /root/nltk_data...
 [nltk_data]    |   Unzipping corpora/names.zip.
 [nltk_data]    | Downloading package shakespeare to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/shakespeare.zip.
+[nltk_data]    |   Unzipping corpora/shakespeare.zip.
 [nltk_data]    | Downloading package stopwords to /root/nltk_data...
 [nltk_data]    |   Unzipping corpora/stopwords.zip.
 [nltk_data]    | Downloading package treebank to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/treebank.zip.
+[nltk_data]    |   Unzipping corpora/treebank.zip.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package twitter_samples to
 [nltk_data]    |     /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping corpora/twitter_samples.zip.
+[nltk_data]    |   Unzipping corpora/twitter_samples.zip.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package omw to /root/nltk_data...
+[nltk_data]    | Downloading package omw-1.4 to /root/nltk_data...
+[nltk_data]    | Downloading package wordnet to /root/nltk_data...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package omw-1.4 to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package wordnet to /root/nltk_data...
-[nltk_data]    | Downloading package wordnet2021 to /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package wordnet31 to /root/nltk_data...
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package wordnet2021 to /root/nltk_data...
+[nltk_data]    | Downloading package wordnet31 to /root/nltk_data...
 [nltk_data]    | Downloading package wordnet_ic to /root/nltk_data...
 </pre></div>
 </div>
@@ -1341,9 +1331,7 @@ dtype: int64
 [nltk_data]    |   Unzipping corpora/words.zip.
 [nltk_data]    | Downloading package maxent_ne_chunker to
 [nltk_data]    |     /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping chunkers/maxent_ne_chunker.zip.
+[nltk_data]    |   Unzipping chunkers/maxent_ne_chunker.zip.
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    | Downloading package punkt to /root/nltk_data...
@@ -1354,9 +1342,7 @@ dtype: int64
 [nltk_data]    |     /root/nltk_data...
 [nltk_data]    | Downloading package averaged_perceptron_tagger to
 [nltk_data]    |     /root/nltk_data...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.
+[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.
 [nltk_data]    | 
 [nltk_data]  Done downloading collection popular
 </pre></div>
@@ -1367,7 +1353,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="tokenisasi-abstrak">
-<h4>Tokenisasi Abstrak<a class="headerlink" href="#tokenisasi-abstrak" title="Permalink to this heading">#</a></h4>
+<h3>Tokenisasi Abstrak<a class="headerlink" href="#tokenisasi-abstrak" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
@@ -1377,7 +1363,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0a871ff0-a226-46d5-88a4-b6028bae4495">
+  <div id="df-e08754de-ee6d-4e63-a9cd-5de3fca667fc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1430,7 +1416,7 @@ dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0a871ff0-a226-46d5-88a4-b6028bae4495')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e08754de-ee6d-4e63-a9cd-5de3fca667fc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1481,12 +1467,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0a871ff0-a226-46d5-88a4-b6028bae4495 button.colab-df-convert');
+          document.querySelector('#df-e08754de-ee6d-4e63-a9cd-5de3fca667fc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0a871ff0-a226-46d5-88a4-b6028bae4495');
+          const element = document.querySelector('#df-e08754de-ee6d-4e63-a9cd-5de3fca667fc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1510,7 +1496,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="menghapus-stop-word">
-<h3>Menghapus Stop Word<a class="headerlink" href="#menghapus-stop-word" title="Permalink to this heading">#</a></h3>
+<h2>Menghapus Stop Word<a class="headerlink" href="#menghapus-stop-word" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
@@ -1542,7 +1528,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="stop-word-judul">
-<h3>Stop Word Judul<a class="headerlink" href="#stop-word-judul" title="Permalink to this heading">#</a></h3>
+<h2>Stop Word Judul<a class="headerlink" href="#stop-word-judul" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># df[[&quot;Judul&quot;, &quot;judul_tokens&quot;]].head()</span>
@@ -1551,7 +1537,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="stop-word-abstrak">
-<h4>Stop Word Abstrak<a class="headerlink" href="#stop-word-abstrak" title="Permalink to this heading">#</a></h4>
+<h3>Stop Word Abstrak<a class="headerlink" href="#stop-word-abstrak" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Abstrak&quot;</span><span class="p">,</span> <span class="s2">&quot;abstrak_tokens&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1560,7 +1546,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d18c93d0-4e3f-4bff-872e-b56ffee5f88c">
+  <div id="df-26cd049f-0ecb-48d7-8901-b184a6c7c4d0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1613,7 +1599,7 @@ dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d18c93d0-4e3f-4bff-872e-b56ffee5f88c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-26cd049f-0ecb-48d7-8901-b184a6c7c4d0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1664,12 +1650,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d18c93d0-4e3f-4bff-872e-b56ffee5f88c button.colab-df-convert');
+          document.querySelector('#df-26cd049f-0ecb-48d7-8901-b184a6c7c4d0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d18c93d0-4e3f-4bff-872e-b56ffee5f88c');
+          const element = document.querySelector('#df-26cd049f-0ecb-48d7-8901-b184a6c7c4d0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1693,7 +1679,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="stemming">
-<h3>Stemming<a class="headerlink" href="#stemming" title="Permalink to this heading">#</a></h3>
+<h2>Stemming<a class="headerlink" href="#stemming" title="Permalink to this heading">#</a></h2>
 <p>Mengubah Kata Kerja menjadi Kata Dasar</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1703,20 +1689,19 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting sastrawi
+Collecting sastrawi
   Downloading Sastrawi-1.0.1-py2.py3-none-any.whl (209 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/209.7 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/209.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺ <span class=" -Color -Color-Green">204.8/209.7 KB</span> <span class=" -Color -Color-Red">6.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">209.7/209.7 KB</span> <span class=" -Color -Color-Red">5.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">209.7/209.7 kB</span> <span class=" -Color -Color-Red">13.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: sastrawi
-Successfully installed sastrawi-1.0.1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed sastrawi-1.0.1
 </pre></div>
 </div>
 </div>
@@ -1734,7 +1719,7 @@ Successfully installed sastrawi-1.0.1
 </div>
 </div>
 <div class="section" id="stemming-abstrak">
-<h4>Stemming Abstrak<a class="headerlink" href="#stemming-abstrak" title="Permalink to this heading">#</a></h4>
+<h3>Stemming Abstrak<a class="headerlink" href="#stemming-abstrak" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">progress_apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span>
@@ -1742,7 +1727,7 @@ Successfully installed sastrawi-1.0.1
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "413a4bc387224cd69865d706bae64791"}</script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "3765a774aa864616afe9c321b2a67943"}</script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
 <span class="nn">&lt;ipython-input-27-4304b08574f5&gt;</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">progress_apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span>
 
@@ -1754,25 +1739,25 @@ Successfully installed sastrawi-1.0.1
 <span class="g g-Whitespace">    </span><span class="mi">807</span>                     <span class="n">t</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/pandas/core/series.py</span> in <span class="ni">apply</span><span class="nt">(self, func, convert_dtype, args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">4431</span>         <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-<span class="g g-Whitespace">   </span><span class="mi">4432</span><span class="w">         </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">4433</span><span class="sd">         return SeriesApply(self, func, convert_dtype, args, kwargs).apply()</span>
-<span class="g g-Whitespace">   </span><span class="mi">4434</span><span class="sd"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">4435</span><span class="sd">     def _reduce(</span>
+<span class="g g-Whitespace">   </span><span class="mi">4769</span>         <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+<span class="g g-Whitespace">   </span><span class="mi">4770</span><span class="w">         </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">4771</span><span class="sd">         return SeriesApply(self, func, convert_dtype, args, kwargs).apply()</span>
+<span class="g g-Whitespace">   </span><span class="mi">4772</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">4773</span><span class="sd">     def _reduce(</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/pandas/core/apply.py</span> in <span class="ni">apply</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1086</span><span class="sd">             return self.apply_str()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1087</span><span class="sd"> </span>
-<span class="ne">-&gt; </span><span class="mi">1088</span><span class="sd">         return self.apply_standard()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1089</span><span class="sd"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1090</span><span class="sd">     def agg(self):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1121</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1122</span><span class="sd">         # self.f is Callable</span>
+<span class="ne">-&gt; </span><span class="mi">1123</span><span class="sd">         return self.apply_standard()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1124</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1125</span><span class="sd">     def agg(self):</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/pandas/core/apply.py</span> in <span class="ni">apply_standard</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1141</span><span class="sd">                 # List[Union[Callable[..., Any], str]]]]]&quot;; expected</span>
-<span class="g g-Whitespace">   </span><span class="mi">1142</span><span class="sd">                 # &quot;Callable[[Any], Any]&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1143</span><span class="sd">                 mapped = lib.map_infer(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1144</span><span class="sd">                     values,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1145</span><span class="sd">                     f,  # type: ignore[arg-type]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1172</span><span class="sd">             else:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1173</span><span class="sd">                 values = obj.astype(object)._values</span>
+<span class="ne">-&gt; </span><span class="mi">1174</span><span class="sd">                 mapped = lib.map_infer(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1175</span><span class="sd">                     values,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1176</span><span class="sd">                     f,</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/pandas/_libs/lib.pyx</span> in <span class="ni">pandas._libs.lib.map_infer</span><span class="nt">()</span>
 
@@ -1836,25 +1821,11 @@ Successfully installed sastrawi-1.0.1
 <span class="g g-Whitespace">     </span><span class="mi">91</span><span class="s2">                 return</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/Sastrawi/Stemmer/Context/Context.py</span> in <span class="ni">accept_prefix_visitors</span><span class="nt">(self, visitors)</span>
-<span class="g g-Whitespace">    </span><span class="mi">108</span><span class="s2">         removalCount = len(self.removals)</span>
 <span class="g g-Whitespace">    </span><span class="mi">109</span><span class="s2">         for visitor in visitors:</span>
-<span class="ne">--&gt; </span><span class="mi">110</span><span class="s2">             self.accept(visitor)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span><span class="s2">             if self.dictionary.contains(self.current_word):</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span><span class="s2">             self.accept(visitor)</span>
+<span class="ne">--&gt; </span><span class="mi">111</span><span class="s2">             if self.dictionary.contains(self.current_word):</span>
 <span class="g g-Whitespace">    </span><span class="mi">112</span><span class="s2">                 return self.current_word</span>
-
-<span class="nn">/usr/local/lib/python3.9/dist-packages/Sastrawi/Stemmer/Context/Context.py</span> in <span class="ni">accept</span><span class="nt">(self, visitor)</span>
-<span class="g g-Whitespace">     </span><span class="mi">95</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">96</span><span class="s2">     def accept(self, visitor):</span>
-<span class="ne">---&gt; </span><span class="mi">97</span><span class="s2">         visitor.visit(self)</span>
-<span class="g g-Whitespace">     </span><span class="mi">98</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">99</span><span class="s2">     def accept_visitors(self, visitors):</span>
-
-<span class="nn">/usr/local/lib/python3.9/dist-packages/Sastrawi/Stemmer/Context/Visitor/AbstractDisambiguatePrefixRule.py</span> in <span class="ni">visit</span><span class="nt">(self, context)</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span><span class="s2">         for disambiguator in self.disambiguators:</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span><span class="s2">             result = disambiguator.disambiguate(context.current_word)</span>
-<span class="ne">---&gt; </span><span class="mi">15</span><span class="s2">             if context.dictionary.contains(result):</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span><span class="s2">                 break</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span><span class="s2">             if self.process_is_stopped:</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -2002,7 +1973,7 @@ Successfully installed sastrawi-1.0.1
 </div>
 </div>
 <div class="section" id="export-data-processing">
-<h3>Export data Processing<a class="headerlink" href="#export-data-processing" title="Permalink to this heading">#</a></h3>
+<h2>Export data Processing<a class="headerlink" href="#export-data-processing" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;abstrak_tokens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
@@ -2014,7 +1985,7 @@ Successfully installed sastrawi-1.0.1
 </div>
 </div>
 <div class="section" id="load-data-processing">
-<h3>Load Data Processing<a class="headerlink" href="#load-data-processing" title="Permalink to this heading">#</a></h3>
+<h2>Load Data Processing<a class="headerlink" href="#load-data-processing" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataOlah</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/Lailyth611/PSD/main/DataOlah_Pta.csv&#39;</span><span class="p">)</span>
@@ -2188,7 +2159,7 @@ Successfully installed sastrawi-1.0.1
 </div>
 </div>
 <div class="section" id="modeling-data">
-<h2>Modeling Data<a class="headerlink" href="#modeling-data" title="Permalink to this heading">#</a></h2>
+<h1>Modeling Data<a class="headerlink" href="#modeling-data" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -2200,7 +2171,7 @@ Successfully installed sastrawi-1.0.1
 </div>
 </div>
 <div class="section" id="ekstraksi-fitur">
-<h3>Ekstraksi Fitur<a class="headerlink" href="#ekstraksi-fitur" title="Permalink to this heading">#</a></h3>
+<h2>Ekstraksi Fitur<a class="headerlink" href="#ekstraksi-fitur" title="Permalink to this heading">#</a></h2>
 <p>Menggunakan TF-IDF :
 term frequency–inverse document frequency</p>
 <div class="cell docutils container">
@@ -2653,7 +2624,7 @@ term frequency–inverse document frequency</p>
 </div>
 </div>
 <div class="section" id="pca">
-<h3>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h3>
+<h2>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h2>
 <p>Untuk mereduksi kolom data</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2701,7 +2672,7 @@ term frequency–inverse document frequency</p>
 </div>
 </div>
 <div class="section" id="training-data">
-<h2>Training Data<a class="headerlink" href="#training-data" title="Permalink to this heading">#</a></h2>
+<h1>Training Data<a class="headerlink" href="#training-data" title="Permalink to this heading">#</a></h1>
 <p>Split Data</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2745,7 +2716,7 @@ term frequency–inverse document frequency</p>
 </div>
 </div>
 <div class="section" id="menggunakan-knn">
-<h3>Menggunakan KNN<a class="headerlink" href="#menggunakan-knn" title="Permalink to this heading">#</a></h3>
+<h2>Menggunakan KNN<a class="headerlink" href="#menggunakan-knn" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
@@ -2765,9 +2736,9 @@ term frequency–inverse document frequency</p>
 </div>
 </div>
 <div class="section" id="evaluasi">
-<h2>Evaluasi<a class="headerlink" href="#evaluasi" title="Permalink to this heading">#</a></h2>
+<h1>Evaluasi<a class="headerlink" href="#evaluasi" title="Permalink to this heading">#</a></h1>
 <div class="section" id="id1">
-<h3>Menggunakan KNN<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h2>Menggunakan KNN<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
@@ -2825,7 +2796,7 @@ F1 score :  0.8161082746969439
 </div>
 </div>
 <div class="section" id="menggunakan-naive-bayes">
-<h3>Menggunakan Naive Bayes<a class="headerlink" href="#menggunakan-naive-bayes" title="Permalink to this heading">#</a></h3>
+<h2>Menggunakan Naive Bayes<a class="headerlink" href="#menggunakan-naive-bayes" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
@@ -2884,7 +2855,7 @@ F1 score :  0.7103378400471605
 </div>
 </div>
 <div class="section" id="export-model">
-<h2>Export Model<a class="headerlink" href="#export-model" title="Permalink to this heading">#</a></h2>
+<h1>Export Model<a class="headerlink" href="#export-model" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">joblib</span> <span class="kn">import</span> <span class="n">dump</span>
@@ -2898,7 +2869,6 @@ F1 score :  0.7103378400471605
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;vectorizer_model_abstrak.joblib&#39;]
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -2962,58 +2932,60 @@ F1 score :  0.7103378400471605
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-data">Pre Processing Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processing-data-null">Processing Data Null</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-null">Cek Data Null</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hapus-data-null">Hapus Data Null</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-not-null">Cek data not null</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-jumlah-class-data">Cek Jumlah Class Data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik-data-class">Grafik data Class</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">UTS: Processing Data PTA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-processing-data">Pre Processing Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processing-data-null">Processing Data Null</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-null">Cek Data Null</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hapus-data-null">Hapus Data Null</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-not-null">Cek data not null</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-jumlah-class-data">Cek Jumlah Class Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik-data-class">Grafik data Class</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-text">Cleaning Text</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-cleaning">Export Data Cleaning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-text">Cleaning Text</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-cleaning">Export Data Cleaning</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-missing-value">Menghapus Missing Value</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-duplicate-value">Menghapus Duplicate Value</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-kolom-abstrak">Cek Data Kolom Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-missing-value">Menghapus Missing Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-duplicate-value">Menghapus Duplicate Value</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-data-kolom-abstrak">Cek Data Kolom Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi">Tokenisasi</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi-abstrak">Tokenisasi Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi">Tokenisasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi-abstrak">Tokenisasi Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-stop-word">Menghapus Stop Word</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-judul">Stop Word Judul</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-abstrak">Stop Word Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-stop-word">Menghapus Stop Word</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-judul">Stop Word Judul</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-word-abstrak">Stop Word Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">Stemming</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming-abstrak">Stemming Abstrak</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">Stemming</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming-abstrak">Stemming Abstrak</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-processing">Export data Processing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-processing">Load Data Processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-data-processing">Export data Processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-processing">Load Data Processing</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-data">Modeling Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-fitur">Ekstraksi Fitur</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-data">Modeling Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-fitur">Ekstraksi Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-data">Training Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-knn">Menggunakan KNN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#training-data">Training Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-knn">Menggunakan KNN</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Menggunakan KNN</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-naive-bayes">Menggunakan Naive Bayes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Menggunakan KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-naive-bayes">Menggunakan Naive Bayes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-model">Export Model</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#export-model">Export Model</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
